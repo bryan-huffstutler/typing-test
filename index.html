@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Typing Test</title>
+</head>
+
+<body>
+  <h1>TYPING TEST</h1>
+  <div class="wpm">
+    <div class='head'>WPM</div>
+    <div class='init_wpm'>100</div>
+  </div>
+
+  <div class="errors">
+    <div class='head'>Errors</div>
+    <div class='init_errors'>0</div>
+  </div>
+
+  <div class="accuracy">
+    <div class='head'>Accuracy %</div>
+    <div class='init_accuracy'>100</div>
+  </div>
+
+  <div class="time">
+    <div class='head'>Time</div>
+    <div class='init_time'>60</div>
+  </div>
+
+
+  <div class="message"></div>
+
+  <textarea class="words" cols='75' rows='5' oninput='textInput()' onfocus='startGame()' disabled
+    placeholder='Click start, then type away...'></textarea><br>
+
+  <button class="start">Start</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
